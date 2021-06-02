@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Restaurant</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--header-navbar-->
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="logo">
+            <a href="#home"
+              ><img src="img/Aurora.png" alt="logo" id="logo"
+            /></a>
+          </div>
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+
+          <nav class="nav">
+            <ul>
+              <li class="nav-item"><a href="#home">home</a></li>
+              <li class="nav-item"><a href="#about">about</a></li>
+              <li class="nav-item"><a href="#our-menu">our menu</a></li>
+              <li class="nav-item"><a href="#testimonials">testimonials</a></li>
+              <li class="nav-item"><a href="#team">team</a></li>
+              <li class="nav-item"><a href="#contact">contact us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--end-->
+
+    <!--home-section-->
+    <section class="home-section" id="home">
+      <div class="container">
+        <div class="home-bg"></div>
+        <div class="row min-vh-100 align-items-center">
+          <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Aurora Restaurant</h1>
+            <p>
+              We create and transform. Flavors. Experiences. Ourselves.
+              Exploring the vast universe of tastes, we create our own version
+              of Bulgarian cuisine.
+            </p>
+            <a href="#our-menu" class="btn btn-default">our menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end-->
+
+    <!--about-->
+    <section class="about-section sec-padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title" data-aos="fade-up">
+            <span>our story</span>
+            <h2>about us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-text" data-aos="fade-right">
+            <h3>Welcome To Aurora Restaurant</h3>
+            <p>
+              There is a restaurant in the Sofia center where two universes meet
+              and blend their worlds creating a fascinating atmosphere made of
+              cosmic mysteries and earthly riches. It’s a place where all
+              forgotten secrets of traditional Bulgarian cuisine touch the
+              unknown space beyond the usual and get inspired by the cosmic
+              vastness that embraces our home planet Earth.
+            </p>
+            <a href="#our-menu" class="btn btn-default">check our menu</a>
+          </div>
+          <div class="about-img" data-aos="fade-left" data-aos-duration="700">
+            <div class="img-box">
+              <img src="img/about-img.jpg" alt="about img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end-->
+
+    <!--menu section-->
+    <section class="menu-section sec-padding" id="our-menu">
+      <div class="container">
+        <div class="row">
+          <div class="section-title" data-aos="fade-up">
+            <span>order now</span>
+            <h2>our menu</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="menu-tabs" data-aos="fade-up">
+            <button
+              type="button"
+              class="menu-tab-item active"
+              data-target="#lunch"
+            >
+              Lunch
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#dinner">
+              dinner
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#drinks">
+              drinks
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#desserts">
+              desserts
+            </button>
+            <button type="button" class="menu-tab-item" data-target="#orders">
+              order now
+            </button>
+          </div>
+        </div>
+        <!--LUNCH-->
+        <div class="row menu-tab-content active" id="lunch">
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/1.jpg" alt="menu item thumbnail" />
+              <h3>beef steak with boiled potatoes</h3>
+            </div>
+            <div class="menu-item-price">30.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/2.jpg" alt="menu item thumbnail" />
+              <h3>Oven-baked pasta with vegetables</h3>
+            </div>
+            <div class="menu-item-price">25.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/seafood.jpg" alt="menu item thumbnail" />
+              <h3>seafood mix</h3>
+            </div>
+            <div class="menu-item-price">44.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/4.jpg" alt="menu item thumbnail" />
+              <h3>salad mix of vegetables</h3>
+            </div>
+            <div class="menu-item-price">20.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/5.jpg" alt="menu item thumbnail" />
+              <h3>Fettuccine Alfredo with shrimp</h3>
+            </div>
+            <div class="menu-item-price">40.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/6.jpg" alt="menu item thumbnail" />
+              <h3>pea puree with avocado</h3>
+            </div>
+            <div class="menu-item-price">10.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/7.jpg" alt="menu item thumbnail" />
+              <h3>Stuffed turkey in the oven</h3>
+            </div>
+            <div class="menu-item-price">23.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/8.jpg" alt="menu item thumbnail" />
+              <h3>shopska salad</h3>
+            </div>
+            <div class="menu-item-price">33.00€</div>
+          </div>
+        </div>
+        <!--DINNER-->
+        <div class="row menu-tab-content" id="dinner">
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/9.jpg" alt="menu item thumbnail" />
+              <h3>Chicken liver sarma with mushrooms and spinach</h3>
+            </div>
+            <div class="menu-item-price">31.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/10.jpg" alt="menu item thumbnail" />
+              <h3>Omelet with nettles</h3>
+            </div>
+            <div class="menu-item-price">17.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/11.jpg" alt="menu item thumbnail" />
+              <h3>Marinated pork chops in the oven</h3>
+            </div>
+            <div class="menu-item-price">24.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/12.jpg" alt="menu item thumbnail" />
+              <h3>Stuffed turkey fillet with mushrooms and blue cheese</h3>
+            </div>
+            <div class="menu-item-price">30.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/19.jpg" alt="menu item thumbnail" />
+              <h3>Turkey Ragu</h3>
+            </div>
+            <div class="menu-item-price">26.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/20.jpg" alt="menu item thumbnail" />
+              <h3>Pad Thai</h3>
+            </div>
+            <div class="menu-item-price">24.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/21.jpg" alt="menu item thumbnail" />
+              <h3>Shrimp Scampi</h3>
+            </div>
+            <div class="menu-item-price">31.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/22.jpg" alt="menu item thumbnail" />
+              <h3>Pork Chops</h3>
+            </div>
+            <div class="menu-item-price">30.00€</div>
+          </div>
+        </div>
+        <!--DRINKS-->
+        <div class="row menu-tab-content" id="drinks">
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/13.jpg" alt="menu item thumbnail" />
+              <h3>
+                Domaine de la Romanee-Conti Romanee-Conti Grand Cru, Cote de
+                Nuits, France
+              </h3>
+            </div>
+            <div class="menu-item-price">100.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/14.jpg" alt="menu item thumbnail" />
+              <h3>Dalmore 62</h3>
+            </div>
+            <div class="menu-item-price">150.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/23.jpg" alt="menu item thumbnail" />
+              <h3>Green Liquor</h3>
+            </div>
+            <div class="menu-item-price">8.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/24.jpg" alt="menu item thumbnail" />
+              <h3>Wild Turkey</h3>
+            </div>
+            <div class="menu-item-price">15.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/25.jpg" alt="menu item thumbnail" />
+              <h3>Vodka Absolute</h3>
+            </div>
+            <div class="menu-item-price">9.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/26.jpg" alt="menu item thumbnail" />
+              <h3>Kamet Whisky</h3>
+            </div>
+            <div class="menu-item-price">25.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/27.jpg" alt="menu item thumbnail" />
+              <h3>Duvel Beer</h3>
+            </div>
+            <div class="menu-item-price">7.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/28.jpg" alt="menu item thumbnail" />
+              <h3>Corona Beer</h3>
+            </div>
+            <div class="menu-item-price">10.00€</div>
+          </div>
+        </div>
+        <!--DESSERTS-->
+        <div class="row menu-tab-content" id="desserts">
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/15.jpg" alt="menu item thumbnail" />
+              <h3>Chocopologie by Knipschildt</h3>
+            </div>
+            <div class="menu-item-price">35.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/16.jpg" alt="menu item thumbnail" />
+              <h3>Strawberries Arnaud</h3>
+            </div>
+            <div class="menu-item-price">25.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/17.jpg" alt="menu item thumbnail" />
+              <h3>Golden Opulence Sundae</h3>
+            </div>
+            <div class="menu-item-price">25.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/29.jpg" alt="menu item thumbnail" />
+              <h3>Pecan chocolate bread and butter pudding</h3>
+            </div>
+            <div class="menu-item-price">15.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/30.jpg" alt="menu item thumbnail" />
+              <h3>Baked ricotta cake</h3>
+            </div>
+            <div class="menu-item-price">13.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/31.jpg" alt="menu item thumbnail" />
+              <h3>Pecan baklava rolls</h3>
+            </div>
+            <div class="menu-item-price">23.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-right">
+            <div class="menu-item-title">
+              <img src="img/menu/32.jpg" alt="menu item thumbnail" />
+              <h3>Lemon meringue pie</h3>
+            </div>
+            <div class="menu-item-price">9.00€</div>
+          </div>
+          <div class="menu-item" data-aos="fade-up-left">
+            <div class="menu-item-title">
+              <img src="img/menu/33.jpg" alt="menu item thumbnail" />
+              <h3>Sticky ginger pudding</h3>
+            </div>
+            <div class="menu-item-price">19.00€</div>
+          </div>
+        </div>
+        <!--ORDERS-->
+        <div class="row menu-tab-content" id="orders">
+          <div class="row">
+            <div class="order-form">
+              <form>
+                <div class="row">
+                  <div class="input-group input-3" data-aos="fade-down-right">
+                    <input
+                      type="text"
+                      placeholder="Names"
+                      class="input-control"
+                    />
+                  </div>
+                  <div class="input-group input-3" data-aos="fade-down">
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      class="input-control"
+                    />
+                  </div>
+                  <div class="input-group input-3" data-aos="fade-down-left">
+                    <input
+                      type="text"
+                      placeholder="Email"
+                      class="input-control"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-group" data-aos="fade-up">
+                    <textarea
+                      placeholder="Write us what would you like to order and your address"
+                      class="input-control"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-group" data-aos="fade-up">
+                    <button type="reset" class="btn btn-default">
+                      Order Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--end-->
+
+    <!--testimonial-->
+    <section class="testimonials-section sec-padding" id="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="section-title" data-aos="flip-up">
+            <span>testimonials</span>
+            <h2>some feedbacks</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="testi-item" data-aos="flip-down" data-aos-duration="1000">
+            <div class="testi-author">
+              <div class="testi-author-name">
+                <h3>Joseph Gonzalez</h3>
+                <span>web designer</span>
+              </div>
+              <div class="testi-author-img">
+                <img src="img/testimonials/1.jpg" alt="testi author img" />
+              </div>
+            </div>
+            <p>
+              We are so fortunate to have this place just a few minutes drive
+              away from home. Food is stunning, both the tapas and downstairs
+              restaurant. Cocktails wow, wine great and lovely selection of
+              beers. Love this place and will continue to visit.
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testi-item" data-aos="flip-down" data-aos-duration="1000">
+            <div class="testi-author">
+              <div class="testi-author-name">
+                <h3>Nojan Namdar</h3>
+                <span>back end developer</span>
+              </div>
+              <div class="testi-author-img">
+                <img src="img/testimonials/2.jpg" alt="testi author img" />
+              </div>
+            </div>
+            <p>
+              Excellent food. Menu is extensive and seasonal to a particularly
+              high standard. It can be expensive but worth it and they do
+              different deals on different nights so it’s worth checking them
+              out before you book. Highly recommended.
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testi-item" data-aos="flip-down" data-aos-duration="1000">
+            <div class="testi-author">
+              <div class="testi-author-name">
+                <h3>Houcine Nacib</h3>
+                <span>Full Stack developer</span>
+              </div>
+              <div class="testi-author-img">
+                <img src="img/testimonials/3.jpg" alt="testi author img" />
+              </div>
+            </div>
+            <p>
+              This place is great! Atmosphere is chill and cool but the staff is
+              also really friendly. Food is pretty good, some bulgarian classics
+              and some twists, and for their prices it’s 100% worth it.
+            </p>
+            <div class="ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end-->
+
+    <!--team of chefs-->
+    <section class="team-section sec-padding" id="team">
+      <div class="container">
+        <div class="row">
+          <div class="section-title" data-aos="zoom-in">
+            <span>team</span>
+            <h2>our chefs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/team/1.jpg" alt="team item" />
+            <div class="team-item-info">
+              <h2>Kroongtana Nimnu</h2>
+              <p>head chef</p>
+            </div>
+          </div>
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/team/2.jpg" alt="team item" />
+            <div class="team-item-info">
+              <h2>Louis Hansel</h2>
+              <p>deputy chef</p>
+            </div>
+          </div>
+          <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/team/3.jpg" alt="team item" />
+            <div class="team-item-info">
+              <h2>Ronan Kruithof</h2>
+              <p>station chef</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--end-->
+
+    <!--footer-->
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="footer-item" data-aos="fade-up">
+            <h3>our location</h3>
+            <p>Plaza street №12,<br />Sofia - 1000</p>
+          </div>
+          <div class="footer-item" data-aos="fade-up">
+            <h3>opening hours</h3>
+            <p>
+              Monday to Sunday <br />
+              10:00 - 23:00
+            </p>
+          </div>
+          <div class="footer-item" data-aos="fade-up">
+            <h3>contact us</h3>
+            <p>+359 000 000 000</p>
+            <p>aurora.info@gmail.com</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="copyright">&copy; Angel Mladenov, STD, UNI-Plovdiv</div>
+        </div>
+      </div>
+    </footer>
+    <!--end-->
+
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+  </body>
+</html>
