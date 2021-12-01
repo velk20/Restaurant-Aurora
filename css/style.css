@@ -5,8 +5,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  outline: none;
+  box-sizing: border-box; /*The width and height properties (and min/max properties) includes content, padding and border*/
   scroll-behavior: smooth;
 }
 /*Global variables*/
@@ -63,15 +62,12 @@ section {
   max-width: 1170px;
   margin: auto;
 }
-.row {
+.line {
   display: flex;
   flex-wrap: wrap; /*Specifies that the flexible items will wrap if necessary	
   */
 }
-.min-vh-100 {
-  /*vh:"Viewport Height" -  A percentage of the full viewport height. 10vh will resolve to 10% of the current viewport height.*/
-  min-height: 100vh; /*za da moje home page da bude na celiq ekran dori i pri po-malki ili golemi*/
-}
+
 .sec-padding {
   /*for every section we got padding on top and bottom*/
   padding: 80px 0;
@@ -96,6 +92,16 @@ section {
   text-transform: capitalize;
 }
 
+.background-dark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.7;
+}
+
 /*for button - GENERAL*/
 .btn {
   display: inline-block;
@@ -104,14 +110,13 @@ section {
   border-radius: 30px;
   text-transform: capitalize; /*golemi purvi bukvi*/
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /*CSS transitions allows you to change property values smoothly, over a given duration.*/
   font-size: 16px;
   cursor: pointer;
   font-family: inherit;
   color: var(--main-color);
   line-height: 1.5;
   user-select: none; /*za da ne markirash teksta na butona*/
-  /*border: none;*/
   border: 2px solid var(--main-color);
 }
 
@@ -119,17 +124,6 @@ section {
   color: var(--white);
   background-color: var(--main-color);
 }
-/*background image animations zoom in and out*/
-@keyframes zoomInOut {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-/* end _! background image animations zoom in and out*/
 
 .justify-content-between {
   justify-content: space-between; /*za da moje LOGOTO i navigaciqta da se v dvata kraq na NAVBARA*/
@@ -143,6 +137,7 @@ section {
   width: 100%;
 }
 .header::before {
+  /*The ::before pseudo-element can be used to insert some content before the content of an element.*/
   /*Header animation background 
   when scroll*/
   content: "";
@@ -154,7 +149,9 @@ section {
   background-color: var(--dark-light);
   z-index: -1; /*za da moje logoto i navigaciqta da sa otgore* nad vsichki */
   transition: transform 0.5s ease; /*leka animaciq na headera*/
-  transform: translateY(-100%); /*za da moje se pokazwa samo pri scrolvane*/
+  transform: translateY(
+    -100%
+  ); /*za da moje da skrie background na navbara i da se pokazwa samo pri scrolvane*/
 }
 .header.sticky::before {
   transform: translateY(0%); /*pri skrolvane da sedi otgore i da ne se murda*/
@@ -244,10 +241,10 @@ section {
   background-color: var(--dark-light);
   padding: 80px 0 40px;
   transition: transform 0.5s ease;
-  transform: translateX(100%);
+  transform: translateX(100%); /*za da se skrie nai-vdqsno*/
 }
 .header .nav.open {
-  transform: translateX(0%);
+  transform: translateX(0%); /*za da se otvori*/
 }
 .header .nav ul li a {
   display: block;
@@ -263,21 +260,19 @@ section {
 
 /*home page*/
 .home-section {
-  /*background-color: var(--main-color);*/
   position: relative;
   overflow: hidden;
 }
-/*little dark in front of the image in home section*/
-.home-section::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #000000;
-  opacity: 0.7;
-  z-index: -1;
+
+/*background image animations zoom in and out*/
+@keyframes zoomInOut {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 .home-section .home-bg {
   position: absolute;
@@ -289,11 +284,13 @@ section {
   background-attachment: fixed; /*The background image will not scroll with the page*/
   background-size: cover; /*Resize the background image to cover the entire container*/
   background-position: center;
-  z-index: -2; /*za da bude zad teksta na home stranicata*/
+  z-index: -99; /*za da bude zad teksta i zad zatumnenieto na home stranicata*/
   animation: zoomInOut 20s ease infinite; /*animaciqta koqto napravih po-gore*/
 }
 .home-section .min-vh-100 {
   padding: 100px 0;
+  /*vh:"Viewport Height" -  A percentage of the full viewport height. 10vh will resolve to 10% of the current viewport height.*/
+  min-height: 100vh; /*za da moje home page da bude na celiq ekran dori i pri po-malki ili golemi*/
 }
 .home-text {
   padding: 0 15px;
@@ -359,6 +356,7 @@ section {
 }
 .menu-tab-item 
 /*for individual tabs*/ {
+  display: inline-block;
   font-size: 18px;
   font-family: inherit;
   text-transform: capitalize;
@@ -369,7 +367,6 @@ section {
   cursor: pointer;
   margin: 0 10px 10px;
   transition: color 0.3s ease;
-  display: inline-block;
 }
 /*Which categories of items will be shown when ACTIVATE*/
 .menu-tab-item.active {
@@ -404,7 +401,6 @@ section {
   border-bottom: 2px dashed rgb(49, 54, 0);
 }
 #orders .order-form {
-  flex: 0 0 100%;
   max-width: 100%;
 }
 #orders .order-form form {
@@ -414,13 +410,15 @@ section {
   text-align: center;
 }
 #orders .order-form .input-group {
-  flex: 0 0 100%;
+  flex: 0 0 100%; /*ravnomerno razpoloeni*/
+  /*flex-grow => The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+flex-shrink => The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+flex-basis =>The flex-basis property specifies the initial length of a flexible item.*/
   max-width: 100%;
   padding: 0 15px;
 }
 #orders .order-form .input-group.input-3 {
   /*separate them to be 3 in one line */
-  flex: 0 0 33.33%;
   max-width: 33.33%;
 }
 #orders .order-form textarea.input-control {
@@ -571,16 +569,7 @@ section {
   background-position: center;
   position: relative;
 }
-.footer::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  /*z-index: -1;*/
-}
+
 .footer-item {
   width: calc(100% / 3);
   padding: 0 15px;
@@ -627,7 +616,27 @@ section {
 /*END*/
 
 /*Responsive*/
+@media (max-width: 1025px) {
+  .input-group {
+    align-items: center;
+  }
+  #orders .order-form .input-group {
+    flex: 0 0 100%; /*ravnomerno razpoloeni*/
+    max-width: 100%;
+  }
+  #orders .order-form {
+    align-items: center;
+    margin: auto;
+  }
+}
+
 @media (max-width: 991px) {
+  .order-form {
+    align-items: center;
+  }
+  .order-form .line {
+    width: 100%;
+  }
   .testi-item {
     width: calc(50% - 30px);
   }
@@ -635,8 +644,17 @@ section {
     margin-bottom: 35px;
     width: 50%;
   }
-  .order-form {
-    margin-left: -91px;
+  #orders .order-form .input-group.input-3 {
+    /*separate them to be 3 in one line */
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: -50px;
+  }
+  #orders .order-form textarea.input-control {
+    margin-left: -100px;
+  }
+  #orders .order-form button {
+    margin-left: -100px;
   }
 }
 @media (max-width: 767px) {
@@ -689,7 +707,7 @@ section {
   .order-form {
     margin-left: 16px;
   }
-  .order-form .row {
+  .order-form .line {
     width: 100%;
   }
 }
@@ -697,7 +715,7 @@ section {
   .team-item {
     width: 100%;
   }
-  .order-form .row {
+  .order-form .line {
     width: 100%;
   }
 }

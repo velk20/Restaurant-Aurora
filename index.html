@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aurora Restaurant is one of the best Bulgarian restaurants in Sofia, We create and transform. Flavors. Experiences. Ourselves."
+    />
     <title>Aurora Restaurant</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!--Font-awesome-->
     <link rel="stylesheet" href="css/font-awesome.css" />
+    <!--Animation on scroll-->
     <link rel="stylesheet" href="css/aos.css" />
 
+    <!--Font-awesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
@@ -18,7 +25,7 @@
     <!--header-navbar-->
     <header class="header">
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="line justify-content-between">
           <div class="logo">
             <a href="#home"
               ><img src="img/Aurora.png" alt="logo" id="logo"
@@ -47,7 +54,8 @@
     <section class="home-section" id="home">
       <div class="container">
         <div class="home-bg"></div>
-        <div class="row min-vh-100 align-items-center">
+        <div class="background-dark"></div>
+        <div class="line min-vh-100 align-items-center">
           <div class="home-text" data-aos="fade-up" data-aos-duration="1000">
             <h1>Aurora Restaurant</h1>
             <p>
@@ -55,7 +63,7 @@
               Exploring the vast universe of tastes, we create our own version
               of Bulgarian cuisine.
             </p>
-            <a href="#our-menu" class="btn btn-default">our menu</a>
+            <a href="#our-menu" class="btn">our menu</a>
           </div>
         </div>
       </div>
@@ -65,13 +73,13 @@
     <!--about-->
     <section class="about-section sec-padding" id="about">
       <div class="container">
-        <div class="row">
+        <div class="line">
           <div class="section-title" data-aos="fade-up">
             <span>our story</span>
             <h2>about us</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="line">
           <div class="about-text" data-aos="fade-right">
             <h3>Welcome To Aurora Restaurant</h3>
             <p>
@@ -97,13 +105,13 @@
     <!--menu section-->
     <section class="menu-section sec-padding" id="our-menu">
       <div class="container">
-        <div class="row">
+        <div class="line">
           <div class="section-title" data-aos="fade-up">
             <span>order now</span>
             <h2>our menu</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="line">
           <div class="menu-tabs" data-aos="fade-up">
             <button
               type="button"
@@ -127,7 +135,7 @@
           </div>
         </div>
         <!--LUNCH-->
-        <div class="row menu-tab-content active" id="lunch">
+        <div class="line menu-tab-content active" id="lunch">
           <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/menu/1.jpg" alt="menu item thumbnail" />
@@ -186,7 +194,7 @@
           </div>
         </div>
         <!--DINNER-->
-        <div class="row menu-tab-content" id="dinner">
+        <div class="line menu-tab-content" id="dinner">
           <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/menu/9.jpg" alt="menu item thumbnail" />
@@ -245,7 +253,7 @@
           </div>
         </div>
         <!--DRINKS-->
-        <div class="row menu-tab-content" id="drinks">
+        <div class="line menu-tab-content" id="drinks">
           <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/menu/13.jpg" alt="menu item thumbnail" />
@@ -307,7 +315,7 @@
           </div>
         </div>
         <!--DESSERTS-->
-        <div class="row menu-tab-content" id="desserts">
+        <div class="line menu-tab-content" id="desserts">
           <div class="menu-item" data-aos="fade-up-right">
             <div class="menu-item-title">
               <img src="img/menu/15.jpg" alt="menu item thumbnail" />
@@ -366,16 +374,21 @@
           </div>
         </div>
         <!--ORDERS-->
-        <div class="row menu-tab-content" id="orders">
-          <div class="row">
+        <div class="line menu-tab-content" id="orders">
+          <div class="line">
             <div class="order-form">
-              <form>
-                <div class="row">
+              <form
+                name="myForm"
+                onsubmit="return validateForm()"
+                method="post"
+              >
+                <div class="line">
                   <div class="input-group input-3" data-aos="fade-down-right">
                     <input
                       type="text"
                       placeholder="Names"
                       class="input-control"
+                      name="fname"
                     />
                   </div>
                   <div class="input-group input-3" data-aos="fade-down">
@@ -383,6 +396,7 @@
                       type="text"
                       placeholder="Phone"
                       class="input-control"
+                      name="phone"
                     />
                   </div>
                   <div class="input-group input-3" data-aos="fade-down-left">
@@ -390,20 +404,22 @@
                       type="text"
                       placeholder="Email"
                       class="input-control"
+                      name="email"
                     />
                   </div>
                 </div>
-                <div class="row">
+                <div class="line">
                   <div class="input-group" data-aos="fade-up">
                     <textarea
                       placeholder="Write us what would you like to order and your address"
                       class="input-control"
+                      name="order"
                     ></textarea>
                   </div>
                 </div>
-                <div class="row">
+                <div class="line">
                   <div class="input-group" data-aos="fade-up">
-                    <button type="reset" class="btn btn-default">
+                    <button type="submit" class="btn btn-default">
                       Order Now
                     </button>
                   </div>
@@ -420,13 +436,13 @@
     <!--testimonial-->
     <section class="testimonials-section sec-padding" id="testimonials">
       <div class="container">
-        <div class="row">
+        <div class="line">
           <div class="section-title" data-aos="flip-up">
             <span>testimonials</span>
             <h2>some feedbacks</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="line">
           <div class="testi-item" data-aos="flip-down" data-aos-duration="1000">
             <div class="testi-author">
               <div class="testi-author-name">
@@ -506,13 +522,13 @@
     <!--team of chefs-->
     <section class="team-section sec-padding" id="team">
       <div class="container">
-        <div class="row">
+        <div class="line">
           <div class="section-title" data-aos="zoom-in">
             <span>team</span>
             <h2>our chefs</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="line">
           <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
             <img src="img/team/1.jpg" alt="team item" />
             <div class="team-item-info">
@@ -544,7 +560,8 @@
 
     <footer class="footer" id="contact">
       <div class="container">
-        <div class="row">
+        <div class="background-dark"></div>
+        <div class="line">
           <div class="footer-item" data-aos="fade-up">
             <h3>our location</h3>
             <p>Plaza street №12,<br />Sofia - 1000</p>
@@ -568,7 +585,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="line">
           <div class="copyright">&copy; Angel Mladenov, STD, UNI-Plovdiv</div>
         </div>
       </div>
