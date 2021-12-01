@@ -9,6 +9,7 @@ function toggleNav() {
 /*close nav when click on item */
 document.addEventListener("click", function (e) {
   if (e.target.closest(".nav-item")) {
+    /*The closest() method searches up the DOM tree for the closest element which matches a specified CSS selector. It starts at the element itself, then tests the parent, grandparent, and so on until a match is found. If a match is not found, this method returns null. */
     toggleNav();
   }
 });
@@ -25,6 +26,7 @@ window.addEventListener("scroll", function () {
 /*MENU TABS */
 const menuTabs = document.querySelector(".menu-tabs");
 menuTabs.addEventListener("click", function (e) {
+  /*object which will be passed to event handlers. */
   if (
     e.target.classList.contains("menu-tab-item") &&
     !e.target.classList.contains("active")
@@ -46,6 +48,30 @@ menuTabs.addEventListener("click", function (e) {
     AOS.init();
   }
 });
+
+/*FORM VALIDATION */
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  var z = document.forms["myForm"]["phone"].value;
+  if (!z.match(/^\d+/)) {
+    alert(
+      "Please only enter numeric characters only for your Phone number! (Allowed input:0-9)"
+    );
+    return false;
+  }
+
+  var re = /^\S+@\S+\.\S+$/;
+  var y = document.forms["myForm"]["email"].value;
+  if (!y.match(re)) {
+    alert("Please enter valid email address");
+    return false;
+  }
+}
 
 /*ANIMATION ON SCROLL */
 window.addEventListener("load", function () {
