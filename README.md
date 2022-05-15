@@ -16,7 +16,7 @@ Responsive Website with HTML/CSS/JavaScript
 <br/><br/>
 
 ## 📸 Application screenshots
-<kbd><img src="![screencapture-velk20-github-io-Restaurant-Aurora-2022-05-15-22_22_28](https://user-images.githubusercontent.com/48069264/168490282-a9fb56c9-a0c0-4b73-9a4e-75aa15154bc9.png)" /></kbd>
+<kbd><img src="https://user-images.githubusercontent.com/48069264/168490282-a9fb56c9-a0c0-4b73-9a4e-75aa15154bc9.png"/></kbd>
 <br/><br/>
 
 ## :v: Leave a feedback
